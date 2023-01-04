@@ -53,6 +53,9 @@ document.getElementById("save-btn").addEventListener('click', function(){
 
 
  const savingAmount = document.getElementById('saving-amount');
- const previousSavingamount = savingAmount.innerText;
  savingAmount.innerText = finalTotalSaveBalance;
+//  remaining-balance
+const foundRemainingBalance = saveBalanceParfloat - finalTotalSaveBalance;
+const LocationRemainingBalance = document.getElementById('remaining-balance');
+LocationRemainingBalance.innerText = foundRemainingBalance;
 })
